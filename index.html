@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Simple Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="nowrap">Contact Miles</h1>
+    </header>
+
+    <main>
+      <div class="container">
+        <form id="contact-Form">
+          <fieldset class="field">
+            <p class="para">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                autocomplete="on"
+              />
+              <br />
+              <span id="name-error"></span>
+            </p>
+            <p class="para">
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Phone"
+                autocomplete="on"
+              />
+              <br />
+              <span id="phone-error"></span>
+            </p>
+            <p class="para">
+              <input
+                type="email"
+                name="Email"
+                id="Email"
+                placeholder="Email"
+                autocomplete="on"
+              />
+              <br />
+              <span id="email-error"></span>
+            </p>
+            <p class="para__message">
+              <textarea
+                name="message"
+                id="message"
+                cols="50"
+                rows="5"
+                placeholder="Message"
+              ></textarea>
+            </p>
+          </fieldset>
+          <br />
+          <input id="submit" class="hope" type="submit" value="SEND MESSAGE" />
+        </form>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
